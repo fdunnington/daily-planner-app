@@ -34,10 +34,12 @@ $(document).ready(function(){
         let plannerText = $(this).parent().siblings("#plannerText").val();
         let time = $(this).parent().siblings(".time").text();
 
+        if (plannerText === "") {
+            alert("You haven't added an event to this time-period yet. Type in your event, and then hit 'save' again :)")
+        };
         
-        //set to local storage
-
-        //localStorage.setItem(".timeblock", value);
+        //set to local storage        
+        //localStorage.setItem($(this), value);
 
         console.log('Save button works');
         console.log(timeblockId);
@@ -54,6 +56,7 @@ $(document).ready(function(){
     });
 
     $(".trashBtn").on("click", function(){
+        $("")
         console.log('Trash button works');
     });
 
