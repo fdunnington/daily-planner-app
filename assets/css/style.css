@@ -9,7 +9,6 @@ textarea {
   border: none;
   resize: none;
   color: #000000;
-  border-left: 1px solid black;
   padding: 10px;
 }
 
@@ -25,15 +24,16 @@ textarea {
   white-space: pre-wrap;
 }
 
-.time-block {
+.time {
   text-align: center;
-  border-radius: 15px;
+  border-bottom: 2px dotted #eee;
+  border-right: 2px solid #eee;
+  height: 100%;
 }
 
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;
 }
 
 .hour {
@@ -53,19 +53,41 @@ textarea {
 }
 
 .future {
-  background-color: #77dd77;
-  color: white;
+  background-color: #c6f5c6;
+  color: black;
 }
 
 .saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06aed5;
   color: white;
 }
 
-.saveBtn i:hover {
-  font-size: 20px;
+.saveBtn:hover {
+  color:#ff6961;
   transition: all 0.3s ease-in-out;
 }
+
+.vertical-centre {
+  display: flex;
+  align-items: center;
+}
+
+/* notifications section */
+#notifications {
+  text-align: center;
+}
+
+/* planner section */
+.container {
+  
+  padding: 20px;
+  max-height: 400px;
+  overflow-y: scroll;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
