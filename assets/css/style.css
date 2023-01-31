@@ -1,16 +1,17 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  letter-spacing: 1px;
   line-height: 1;
 }
 
-textarea {
-  background: transparent;
-  border: none;
-  resize: none;
-  color: #000000;
-  padding: 10px;
+
+:root {
+  --gold: rgb(234, 179, 0);
+  --paleGrey: rgb(227, 227, 227);
+  --darkGrey: rgb(91, 91, 91); 
 }
+
 
 .jumbotron {
   text-align: center;
@@ -20,74 +21,99 @@ textarea {
   border-bottom: 10px solid black;
 }
 
-.description {
-  white-space: pre-wrap;
-}
-
-.time {
-  text-align: center;
-  border-bottom: 2px dotted #eee;
-  border-right: 2px solid #eee;
-  height: 100%;
-}
-
-.row {
-  white-space: pre-wrap;
-  height: 80px;
-}
-
-.hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
-}
-
-.past {
-  background-color: #d3d3d3;
-  color: white;
-}
-
-.present {
-  background-color: #ff6961;
-  color: white;
-}
-
-.future {
-  background-color: #c6f5c6;
-  color: black;
-}
-
-.saveBtn {
-  color: white;
-}
-
-.saveBtn:hover {
-  color:#ff6961;
-  transition: all 0.3s ease-in-out;
-}
-
-.vertical-centre {
-  display: flex;
-  align-items: center;
-}
-
-/* notifications section */
-#notifications {
-  text-align: center;
-}
-
 /* planner section */
 .container {
-  
-  padding: 20px;
+  padding: 2%;
   max-height: 400px;
   overflow-y: scroll;
 }
 
+.time {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+}
+
 .row {
+  white-space: pre-wrap;
+  min-height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: none;
+  margin: 2px;
 }
+
+textarea {
+  white-space: pre-wrap;
+  background: transparent;
+  resize: none;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  border: none;
+  border-bottom: 1px dashed var(--paleGrey);
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+.past {
+  background-color: var( --paleGrey);
+  color: black;
+  border-radius: 7px;
+  color: var(--darkGrey)
+}
+
+.past textarea {
+  border-bottom: 1px dashed var(--darkGrey);
+}
+
+.present {
+  background-color: var(--gold);
+  color: black;
+  border-radius: 7px;
+}
+
+.future {
+  border: 2px solid var(--gold);
+  color: black;
+  border-radius: 7px;
+}
+
+/*Buttons*/
+
+#eventButtons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.saveBtn {
+  color: black;
+}
+
+#eventButtons button:hover {
+  color: var(--gold);
+  transition: all 0.3s ease-in-out;
+}
+
+.present #eventButtons button:hover {
+  color:white;
+}
+
+/* notifications section */
+
+#notifications {
+  text-align: center;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+
+
 
