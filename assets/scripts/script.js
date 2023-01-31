@@ -103,11 +103,11 @@ $(document).ready(function(){
     $("#timeblock-16 .plannerText").val(localStorage.getItem("timeblock-16"));
     $("#timeblock-17 .plannerText").val(localStorage.getItem("timeblock-17"));
     $("#timeblock-18 .plannerText").val(localStorage.getItem("timeblock-18"));
-    /*$("#timeblock-19 .plannerText").val(localStorage.getItem("timeblock-19"));
+    $("#timeblock-19 .plannerText").val(localStorage.getItem("timeblock-19"));
     $("#timeblock-20 .plannerText").val(localStorage.getItem("timeblock-20"));
     $("#timeblock-21 .plannerText").val(localStorage.getItem("timeblock-21"));
     $("#timeblock-22 .plannerText").val(localStorage.getItem("timeblock-22"));
     $("#timeblock-23 .plannerText").val(localStorage.getItem("timeblock-23"));
-*/
+
 
 });

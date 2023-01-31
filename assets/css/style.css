@@ -12,13 +12,19 @@ body {
   --darkGrey: rgb(91, 91, 91); 
 }
 
-
+/*Jumbotron*/
 .jumbotron {
   text-align: center;
   background-color: transparent;
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
+  padding: 1.5em 2em;
+}
+
+#currentDay {
+  font-weight: bold;
+  color: var(--gold);
 }
 
 /* planner section */
@@ -108,12 +114,9 @@ textarea {
 #notifications {
   text-align: center;
   display: none;
+  color: var(--gold)
 }
 
 .show {
   display: block;
 }
-
-
-
-
