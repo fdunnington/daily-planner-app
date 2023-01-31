@@ -1,4 +1,7 @@
 # Third-Party APIs: Work Day Scheduler
+## Deployed at https://fdunnington.github.io/daily-planner-app/
+
+<img width="1440" alt="Daily planner app screenshot" src="assets/images/Screenshot 2023-01-31 at 16.39.45.png">
 
 ## Your Task
 
