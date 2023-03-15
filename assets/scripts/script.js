@@ -3,7 +3,7 @@ $(document).ready(function(){
 
 
     // create variables for interactive HTML elements
-    $("#currentDay").text(moment().format("ddd MMM YYYY"));
+    $("#currentDay").text(moment().format("ddd DD MMM YYYY"));
    
 
     function currentTime() {
